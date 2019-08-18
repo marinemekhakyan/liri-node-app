@@ -42,6 +42,11 @@ This will output the following information:
 * Actors in the movie.
 
 
+### node liri.js do-what-it-says
+
+This command will output whatever command is currently in the random.txt file. Currently set to spotify-this-song "I Want it That Way". 
+
+
 
 
 
