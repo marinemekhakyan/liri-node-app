@@ -73,3 +73,13 @@ function movieThis(movie) {
         console.log("We found no results.");
     });
 }
+
+function randomChoice() {
+    fs.readFile("./random.txt", "utf8", function(error, data) {
+        var dataArr = data.split(",");
+        spotifyThis(dataArr[1])
+        if (error) {
+            return console.log(error);
+        }
+    });
+}
