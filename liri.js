@@ -48,3 +48,28 @@ function bandsInTown(artist) {
         console.log (error);
     });
 }
+
+function movieThis(movie) {
+    axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&tomatoes=true&apikey=trilogy").then(
+        function(response) {
+            if (response.data.Title != undefined) {
+                console.log("----------------");
+                console.log("Title: " + response.data.Title);
+                console.log("Year: " + response.data.Year);
+                console.log("imdbRating: " + response.data.imdbRating);
+                console.log("Country: " + response.data.Country);
+                console.log("Language: " + response.data.Language);
+                console.log("Plot: " + response.data.Plot);
+                console.log("Actors: " + response.data.Actors);
+                console.log("RottenTomatoes: " + response.data.tomatoRating);
+                console.log("----------------");
+            }
+            else {
+                movieThis("Mr. Nobody");
+            }
+        }
+    ).catch(function (error) {
+        console.log(error);
+        console.log("We found no results.");
+    });
+}
