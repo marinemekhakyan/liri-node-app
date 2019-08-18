@@ -1,12 +1,12 @@
 require("dotenv").config();
 var fs = require("fs");
 var axios = require("axios");
-// var keys = require("./keys.js");
-// var Spotify = require('node-spotify-api');
-// var spotify = new Spotify({
-//     id: keys.id,
-//     secret: keys.secret
-// });
+var keys = require("./keys.js");
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify({
+    id: keys.id,
+    secret: keys.secret
+});
 
 
 var command = process.argv[2]
@@ -17,9 +17,9 @@ switch (command) {
     case "concert-this": 
         bandsInTown(search);
         break;
-    // case "spotify-this-song":
-    //     spotifyThis(search);
-    //     break;
+    case "spotify-this-song":
+        spotifyThis(search);
+        break;
     case "movie-this":
         movieThis(search);
         break;
@@ -74,6 +74,26 @@ function movieThis(movie) {
     });
 }
 
+function spotifyThis(song) {
+    spotify
+    .search({type: 'track', query: song })
+    .then(function(response) {
+        if (response.tracks.total === 0) {
+            spotifyError();
+        } else {
+            console.log("----------------")
+            console.log("Artist: " + response.tracks.items[0].artists[0].name);
+            console.log("Track: " + response.tracks.items[0].name);
+            console.log("Preview URL: " + response.tracks.items[0].preview_url);
+            console.log("Album: " + response.tracks.items[0].album.name);
+            console.log("-----------------");
+        }
+    }).catch(function (error) {
+        console.log(error);
+        console.log("No results found. Showing results for 'The Sign' by Ace of Base");
+    });
+}
+
 function randomChoice() {
     fs.readFile("./random.txt", "utf8", function(error, data) {
         var dataArr = data.split(",");
@@ -83,3 +103,5 @@ function randomChoice() {
         }
     });
 }
+
+
