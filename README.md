@@ -17,6 +17,8 @@ Name of the venue
 Venue location
 Date of the Event
 
+Here's an example of the command running:
+
 
 ### node liri.js spotify-this-song 'song name here'
 
@@ -45,8 +47,6 @@ This will output the following information:
 ### node liri.js do-what-it-says
 
 This command will output whatever command is currently in the random.txt file. Currently set to spotify-this-song "I Want it That Way". 
-
-
 
 
 
