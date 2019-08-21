@@ -3,10 +3,7 @@ var fs = require("fs");
 var axios = require("axios");
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
-var spotify = new Spotify({
-    id: keys.id,
-    secret: keys.secret
-});
+var spotify = new Spotify(keys.spotify);
 
 
 var command = process.argv[2]
