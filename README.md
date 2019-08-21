@@ -19,7 +19,7 @@ Date of the Event
 
 Here's an example of the command running:
 
-screenshots/concert-this.png
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/concert-this.png)
 
 ### node liri.js spotify-this-song 'song name here'
 
@@ -30,6 +30,9 @@ The song's name
 A preview link of the song from Spotify
 The album that the song is from
 
+Here's an example of the command running:
+
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/spotify-this-song.png)
 
 ### node liri.js movie-this 'movie name here'
 
@@ -44,10 +47,17 @@ This will output the following information:
 * Plot of the movie.
 * Actors in the movie.
 
+Here's an example of the command running:
+
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/movie-this.png)
 
 ### node liri.js do-what-it-says
 
 This command will output whatever command is currently in the random.txt file. Currently set to spotify-this-song "I Want it That Way". 
+
+Here's an example of the command running:
+
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/do-what-it-says.png)
 
 
 
