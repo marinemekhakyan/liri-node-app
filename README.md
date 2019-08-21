@@ -19,6 +19,7 @@ Date of the Event
 
 Here's an example of the command running:
 
+screenshots/concert-this.png
 
 ### node liri.js spotify-this-song 'song name here'
 
