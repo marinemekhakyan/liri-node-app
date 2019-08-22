@@ -60,7 +60,7 @@ Here's an example of the command running:
 ![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/do-what-it-says.png)
 
 
-
+Deployed app https://marinemekhakyan.github.io/liri-node-app/
 
 
 
