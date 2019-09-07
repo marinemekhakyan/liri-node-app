@@ -1,9 +1,15 @@
 require("dotenv").config();
 var fs = require("fs");
 var axios = require("axios");
-var keys = require("./keys.js");
-var spotify = new Spotify(keys.spotify);
+var keys = require("./keys.js").spotify;
 var Spotify = require('node-spotify-api');
+var moment = require('moment');
+// var spotify = new Spotify(keys.spotify);
+// var spotify = new Spotify(keys.spotify);
+var spotify = new Spotify({
+    id: keys.id,
+    secret: keys.secret
+});
 
 var command = process.argv[2]
 var search = process.argv[3]
@@ -60,7 +66,7 @@ function movieThis(movie) {
                 console.log("RottenTomatoes: " + response.data.tomatoRating);
                 console.log("----------------");
             }
-            else {
+            else if (response.data.Title = undefined) {
                 movieThis("Mr. Nobody");
             }
         }
