@@ -19,7 +19,7 @@ Date of the Event
 
 Here's an example of the command running:
 
-![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/concert-this.png)
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/concert-this.gif)
 
 ### node liri.js spotify-this-song 'song name here'
 
@@ -32,7 +32,7 @@ The album that the song is from
 
 Here's an example of the command running:
 
-![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/spotify-this-song.png)
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/spotify-this-song.gif)
 
 ### node liri.js movie-this 'movie name here'
 
@@ -49,7 +49,7 @@ This will output the following information:
 
 Here's an example of the command running:
 
-![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/movie-this.png)
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/movie-this.gif)
 
 ### node liri.js do-what-it-says
 
@@ -57,7 +57,7 @@ This command will output whatever command is currently in the random.txt file. C
 
 Here's an example of the command running:
 
-![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/do-what-it-says.png)
+![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/do-what-it-says.gif)
 
 <<<<<<< HEAD
 Deployed app https://marinemekhakyan.github.io/liri-node-app/
