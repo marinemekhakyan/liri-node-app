@@ -59,8 +59,13 @@ Here's an example of the command running:
 
 ![](https://raw.githubusercontent.com/marinemekhakyan/liri-node-app/master/screenshots/do-what-it-says.png)
 
+<<<<<<< HEAD
 Deployed app https://marinemekhakyan.github.io/liri-node-app/
 
+=======
+
+Deployed app https://marinemekhakyan.github.io/liri-node-app/
+>>>>>>> 80e1a3eac1cd0717307319f05f008657c4b04d37
 
 
 
