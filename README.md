@@ -61,7 +61,7 @@ Here's an example of the command running:
 
 Deployed app https://marinemekhakyan.github.io/liri-node-app/
 
-Link to portfolio https://marinemekhakyan.github.io/i-portfolio/work.html
+Link to portfolio https://marinemekhakyan.github.io/i-portfolio/work-2.html
 
 
 
